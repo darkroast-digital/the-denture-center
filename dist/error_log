@@ -1,0 +1,2 @@
+[10-Aug-2017 07:18:22 America/Chicago] PHP Fatal error:  Out of memory (allocated 1835008) (tried to allocate 3072 bytes) in /home/thedenturecenter/public_html/vendor/slim/slim/Slim/Http/RequestBody.php on line 19
+[25-Sep-2017 08:05:39 America/Chicago] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 3072 bytes) in /home/thedenturecenter/public_html/vendor/composer/ClassLoader.php on line 73

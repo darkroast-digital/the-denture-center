@@ -1,0 +1,55 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Location{% endblock %}
+{% block pageclass %}location-windsor{% endblock %}
+
+{% block herocontent %}
+
+	<h6>The Denture Center</h6>
+    <h1>Locations</h1>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="locations-master__content">
+	<h2>Our Locations</h2>
+	<ul>
+		<li>
+			<a href="{{ path_for('windsor') }}">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/location__windsor.jpg" alt="The Denture Center - Windsor">
+				<p><strong>Windsor</strong></p>
+                <p><small>2601 Lauzon Parkway, Windsor, ON N8T 3M4</small></p>
+			</a>
+		</li>
+		<li>
+			<a href="{{ path_for('leamington') }}">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/location__hero.jpg" alt="The Denture Center - Leamington">
+				<p><strong>Leamington</strong></p>
+                <p><small>156 Talbot St W, Leamington, ON</small></p>
+			</a>
+		</li>
+		<li>
+			<a href="{{ path_for('fergus') }}">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/location__fergus.jpg" alt="The Denture Center - Fergus">
+				<p><strong>Fergus</strong></p>
+                <p><small>305 Tower St S, Fergus, ON N1M 2P5</small></p>
+			</a>
+		</li>
+		<li>
+			<a href="{{ path_for('oakville') }}">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/location__oakville.jpg" alt="The Denture Center -  Oakville">
+				<p><strong>Oakville</strong></p>
+                <p><small>2892 Sheridan Way S, Oakville, ON L6J 7T4</small></p>
+			</a>
+		</li>
+		<li>
+			<a href="{{ path_for('waterloo') }}">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/location-waterloo.jpg" alt="The Denture Center - Waterloo">
+                <p><strong>Waterloo</strong></p>
+                <p><small>48 Bridgeport Rd. E Waterloo, ON N2J2J6</small></p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+{% endblock %}

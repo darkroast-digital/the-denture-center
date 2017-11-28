@@ -1,0 +1,59 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Waterloo{% endblock %}
+{% block pageclass %}location location-leamington{% endblock %}
+
+{% block herocontent %}
+
+	<h6>The Denture Center</h6>
+    <h1>Leamington</h1>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="location__content">
+
+	<div class="location__contact">
+		<h2>
+			<span>The Denture Center</span>
+			Leamington
+		</h2>
+		<ul>
+			<li><i class="fa fa-home"></i> 156 Talbot St W, Leamington, ON</li>
+			<li><i class="fa fa-phone"></i> 519.326.7391 | 519.326.8532</li>
+		</ul>
+	</div>
+
+	<div class="location__team">
+		<h2>The <strong>Team</strong></h2>
+		<div>
+            <figure class="location__team-member">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509556166/denture%20centre/location/windsor/2.jpg" alt="">
+				<h2>Jim <span><strong>Bennet</strong> DD</span></h2>
+				<p>Jim has been practising as a denturist in Windsor, Ontario since 1978. He was awarded membership as a fellow of the Canadian Academy of Denturists, which is an organization dedicated to staying current with denture technologies and techniques through continued education.</p>
+			</figure>
+			<figure class="location__team-member">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509556166/denture%20centre/location/windsor/3.jpg" alt="">
+				<h2>Adam <span><strong>Mazzuca</strong> DD</span></h2>
+				<p>Adam practised in Toronto before joining The Denture Center in 2015. Adam brings a wealth of knowledge and speaks fluent Italian. Adam looks forward to serving the local dental community!</p>
+			</figure>
+			<figure class="location__team-member">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509556166/denture%20centre/location/windsor/8.jpg" alt="">
+				<h2><i style="color:transparent;margin:0;line-height: 0;">s</i><span><strong>Nina</strong> James</span></h2>
+			</figure>
+		</div>
+	</div>
+	<div class="location__map">
+		<div id="map" class="map-leamington">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.6859242982346!2d-82.61316458455349!3d42.04991477920889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883ac11b7bc68133%3A0x3b9aeaf0252879c9!2s156+Talbot+St+W%2C+Leamington%2C+ON+N8H+1N4!5e0!3m2!1sen!2sca!4v1498155713798" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<a href="https://goo.gl/maps/qXzQ4xCGsUx" target="_blank" class="location__map-address">
+			<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482146/denture%20centre/map__icon.png" alt="location" draggable="false">
+			View In Google Maps
+		</a>
+	</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmsePizKcTYg7QfRlfDoWJO8unRBSkNgY"></script>
+
+{% endblock %}

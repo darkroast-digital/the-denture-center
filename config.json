@@ -1,0 +1,19 @@
+{
+	"project" : "project",
+
+	"watch": [
+		"dist/resources/views/**/*.twig",
+		"dist/resources/assets/js/app.js",
+		"dist/resources/assets/css/app.css"
+	],
+
+	"js": {
+		"in": "src/assets/js/app.js",
+		"out": "dist/resources/assets/js/app.js"
+	},
+
+	"sass": {
+		"in": "src/assets/scss/main.scss",
+		"out": "dist/resources/assets/css/app.css"
+	}
+}

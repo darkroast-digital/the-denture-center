@@ -1,0 +1,78 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Home{% endblock %}
+{% block pageclass %}home{% endblock %}
+
+{% block herocontent %}
+
+    <div>
+        <h6>Welcome To</h6>
+        <h1>The Denture Center</h1>
+        <h2>Bringing Your Smile Back To Life</h2>
+    </div>
+
+    <video poster="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482145/denture%20centre/home__hero.jpg" autoplay loop>
+        <source src="http://res.cloudinary.com/darkroast-digital/video/upload/v1509482308/denture%20centre/home__herovid.mp4" type="video/mp4">
+    </video>
+
+{% endblock %}
+
+{% block content %}
+
+    <ul class="home__nav">
+        <li></li>
+        <li class="home__nav-link">
+            <a href="{{ path_for('about') }}">
+                <h3>Learn <strong>About Us</strong></h3>
+                See the Denture Center difference.
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509546221/denture%20centre/home__nav/1.png" alt="The Denture Center - Windsor, Leamington, Fergus, Oakville, Waterloo" draggable="false">
+            </a>
+        </li>
+        <li class="home__nav-link">
+            <a href="{{ path_for('locations') }}">
+                <h3>Our <strong>Locations</strong></h3>
+                5 Locations to serve you across Ontario.
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509546221/denture%20centre/home__nav/2.png" alt="The Denture Center - Windsor, Leamington, Fergus, Oakville, Waterloo" draggable="false">
+            </a>
+        </li>
+        <li class="home__nav-link">
+            <a href="{{ path_for('services') }}">
+                <h3>Our <strong>Services</strong></h3>
+                From Full Dentures repairs and more.
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509546221/denture%20centre/home__nav/3.png" alt="Denture Repairs" draggable="false">
+            </a>
+        </li>
+        <li class="home__nav-link">
+            <a href="{{ path_for('smile-gallery') }}">
+                <h3>Smile <strong>Gallery</strong></h3>
+                Our patients have a lot to smile about.
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509546221/denture%20centre/home__nav/4.png" alt="Satisfied Customers" draggable="false">
+            </a>
+        </li>
+        <li class="home__nav-link">
+            <a href="{{ path_for('contact') }}">
+                <h3>Let's Talk, <strong>Contact Us</strong></h3>
+                Schedule your complimentary consultation today.
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509546221/denture%20centre/home__nav/5.png" alt="Denture consultation" draggable="false">
+            </a>
+        </li>
+        <li></li>
+    </ul>
+
+    <!-- END HOME NAV -->
+
+    <section class="home__intro">
+        <div class="home__intro-content">
+                <div class="home__intro-right">
+                    <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482144/denture%20centre/home__intro-phrase.jpg" draggable="false" alt="It's more than a denture it's your smile.">
+                    <p><strong>The Denture Center</strong> was founded in 2014 with the vision to create the highest standard of care for our patients.</p> <p>The Denture Center works collaboratively with Dental Professionals, Dentists, Oral Surgeons, the Dental Laboratory, and Manufacturers to optimize treatment outcomes for all patients.  Our team will explain all of the various treatment solutions, ensuring a fundamental understanding of removable prosthetics and a long term plan of care and treatment.</p>
+                    <a href="{{ path_for('about') }}" class="button">Learn More <i class="fa fa-caret-right"></i></a>
+                </div>
+                <div class="home__intro-left">
+                    <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482144/denture%20centre/team__photo.jpg" draggable="false" alt="Denture Specialists">
+                </div>
+        </div>
+    </section>
+
+    <!-- End Home Intro -->
+
+{% endblock %}

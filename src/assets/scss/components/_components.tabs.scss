@@ -1,0 +1,66 @@
+/*
+|--------------------------------------------------------------------------
+| #TABS
+|--------------------------------------------------------------------------
+*/
+.tab {
+
+    &__nav {
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            width: 100%;
+            padding: 0;
+
+            li {
+                flex: 1 1 auto;
+                cursor: pointer;
+                position: relative;
+                padding: .5rem;
+                text-align: center;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    width: 100%;
+                    background: color(grey-light);
+                    transition: all .15s ease(inOutQuad);
+                }
+
+                &.is--active {
+
+                    &:after {
+                        background: color(primary);
+                    }
+                }
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        padding: 1rem;
+        transition: all 0 ease(inOutQuad) 0;
+
+        &.is--active {
+            position: relative;
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+            transition: all .5s ease(inOutQuad) .05s;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Contact{% endblock %}
+{% block pageclass %}contact{% endblock %}
+
+{% block herocontent %}
+
+    <h1>Contact Us</h1>
+
+{% endblock %}
+
+{% block content %}
+
+	<div class="contact__content">
+		<div class="contact__content-left">
+			<h2>Contact Us</h2>
+			<ul>
+				<li><i class="fa fa-phone"></i>Telephone: 519.969.6316</li>
+				<li><i class="fa fa-envelope"></i>Email: info@thedenturecenter.ca</li>
+			</ul>
+			<ul class="contact__socials">
+				<li><a href="https://www.facebook.com/thedenturecenter/"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+			<h6>Our Locations</h6>
+			<ul>
+				<li><a href="{{ path_for('windsor') }}">Windsor | 519.969.6316</a></li>
+				<li><a href="{{ path_for('leamington') }}">Leamington | 519.326.7391</a></li>
+				<li><a href="{{ path_for('fergus') }}">Fergus | 519.787.1262</a></li>
+				<li><a href="{{ path_for('oakville') }}">Oakville | 905.829.1033</a></li>
+				<li><a href="{{ path_for('waterloo') }}">Waterloo | 519.884.8386</a></li>
+			</ul>
+		</div>
+		<div class="contact__content-right">
+			<h2>Get In Touch</h2>
+			<p>If you have any questions about our services or are ready to get in touch, use the form below, we'll get back to you as soon as possible.</p>
+			<form action="{{ path_for('contact.form') }}" method="post" class="form">
+				<div class="field">
+					<input type="text" name="name" placeholder="Name" required autocomplete="false">
+					<label for="name">Name</label>
+				</div>
+				<div class="field">
+					<input type="text" name="email" placeholder="Email" required autocomplete="false">
+					<label for="email">Email</label>
+				</div>
+				<div class="field">
+					<textarea name="message" placeholder="Message" required autocomplete="false"></textarea>
+					<label for="message">Message</label>
+				</div>
+				<button type="submit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}

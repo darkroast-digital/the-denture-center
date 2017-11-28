@@ -1,0 +1,19 @@
+/*
+|--------------------------------------------------------------------------
+| #ACCORDIAN
+|--------------------------------------------------------------------------
+*/
+.accordian {
+
+    &__title {
+        cursor: pointer;
+        background: color(grey-lightest);
+        padding: .5rem;
+    }
+
+    &__body {
+        height: auto;
+        overflow: hidden;
+        padding: .5rem;
+    }
+}

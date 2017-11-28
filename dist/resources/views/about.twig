@@ -1,0 +1,97 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}About{% endblock %}
+{% block pageclass %}about{% endblock %}
+
+{% block herocontent %}
+
+    <h1>About Us</h1>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="about__intro">
+        <div class="about__intro-content">
+            <div class="about__intro-left">
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482142/denture%20centre/about__intro-doctor.png" alt="Denture Specialist" draggable="false">
+            </div>
+            <div class="about__intro-right">
+                <p>To provide the best quality removable prosthetic solutions available, using the most Innovative and quality products from Ivoclar Vivadent.  Our team will consult with your patients and explain all of the various treatment solutions, ensuring the patient will have a fundamental understanding of removable prosthetics.  Working together we will alleviate the daily challenging edentulous patients in your office and create avenues that provide you with the opportunity to perform services you truly enjoy doing.</p>
+                <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482142/denture%20centre/about__intro-sig.png" alt="Eric Kukucka DD." draggable="false">
+                <cite>
+                    Eric Kukucka DD.
+                    <span>President</span>
+                </cite>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Intro -->
+
+    <div class="about__services">
+        <h2>Transform Your Smile</h2>
+        <h1>Transform Your Life</h1>
+        <p><strong>Because you have false teeth does not mean they have to look, ﬁt and feel false. </strong>Not all dentures are created equally. Whether you need a full, partial or implant denture, you can have more than a denture: you can have a smile. For a smile so natural no one will know it’s a denture and so comfortable even you will forget. Ask our team about Ivoclar Vivadent Removable dentures. You will wear your new smile with confidence!  <strong>OUR SERVICES:</strong></p>
+        <ul>
+            <li><a href="{{ path_for('services') }}#fulldentures"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509545757/denture%20centre/about__services/1.jpg" alt="Full Dentures" draggable="false">Full Dentures</a></li>
+            <li><a href="{{ path_for('services') }}#partialdentures"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509545757/denture%20centre/about__services/2.jpg" alt="Partial Dentures" draggable="false">Partial Dentures</a></li>
+            <li><a href="{{ path_for('services') }}#repairs"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509545757/denture%20centre/about__services/3.jpg" alt="Repairs" draggable="false">Repairs</a></li>
+            <li><a href="{{ path_for('services') }}#dentalimplants"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509545757/denture%20centre/about__services/4.jpg" alt="Implants" draggable="false">Implant Dentures</a></li>
+            <li><a href="{{ path_for('services') }}#clinicalservices"><img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509545757/denture%20centre/about__services/5.jpg" alt="Clinical Services" draggable="false">Clinical Services</a></li>
+        </ul>
+        <a class="button" href="{{ path_for('services') }}" class="button">More About Our Services <i class="fa fa-caret-right"></i></a>
+    </div>
+
+    <!-- End Services -->
+
+    <div class="about__cta">
+        <div class="about__cta-left">
+            <h2>
+                Working <span>with</span> <br>
+                <span>your</span> dentist
+            </h2>
+        </div>
+        <div class="about__cta-right">
+            <p>We’re committed to working closely with your Dentist and Oral Surgeon as part of a comprehensive dental team to provide the highest standard of care for you and all of our patients. Everyday, we collaborate with dental proffesionals all over Ontario on:</p>
+            <ul>
+                <li>Collaborative Treatement</li>
+                <li>Highest Standard of Care</li>
+                <li>Patient Consultations</li>
+                <li>Same-Day Service</li>
+                <li>Quality Prosthesis</li>
+                <li>Convenience</li>
+                <li>Government Assistance Accepted</li>
+                <li>Implant Treatment</li>
+                <li>ODSP</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- End CTA -->
+
+    <div class="about__products">
+        <div class="about__products-content">
+            <div class="about__products-intro">
+                <div>
+                    <div>
+                        <h2>
+                            <span>Delivering next level care through</span>
+                            innovative technology and quality products.
+                        </h2>
+                        <p>To provide the best quality removable prosthetic solutions available, using the most Innovative and quality products from Ivoclar Vivadent. Our team will consult with you and explain all of the various treatment solutions ensuring you have a fundamental understanding of removable prosthetics.  We work alongside dental professionals and collaborate on treatment to ensure the best quality care and all options are considered for long term results.  Our goal is to alleviate the daily challenges and create a quality prosthesis that gives you the smiles you deserve.</p>
+                        <p>Our on-site lab also allows us to carefully monitor the quality of all of our dentures and ensure that all new dentures, repairs and realignments are done in a timely manner to make sure our patients can keep on smiling.</p>
+                    </div>
+                    <div class="image__container">
+                    <img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482143/denture%20centre/about__title-bg.jpg" alt="Ivobase Press Injector">
+                    </div>
+                </div>
+            </div>
+            <div class="about__products-copy">
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

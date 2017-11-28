@@ -1,0 +1,5 @@
+node_modules/
+dist.zip
+mix-manifest.json
+webpack.mis.json
+yarn.lock

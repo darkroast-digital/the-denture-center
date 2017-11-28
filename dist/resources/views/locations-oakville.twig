@@ -1,0 +1,60 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Waterloo{% endblock %}
+{% block pageclass %}location location-oakville{% endblock %}
+
+{% block herocontent %}
+
+	<h6>The Denture Center</h6>
+    <h1>Oakville</h1>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="location__content">
+
+	<div class="location__contact">
+		<h2>
+			<span>The Denture Center</span>
+			Oakville
+		</h2>
+		<ul>
+			<li><i class="fa fa-home"></i> 2892 Sheridan Way S, Oakville, ON L6J 7T4</li>
+			<li><i class="fa fa-phone"></i> 905.829.1033</li>
+		</ul>
+	</div>
+
+	<div class="location__team">
+		<h2>The <strong>Team</strong></h2>
+		<div>
+			<figure class="location__team-member">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509555937/denture%20centre/location/oakville/2.jpg" alt="Denturist">
+				<h2>Ian <span><strong>Paterson</strong> DD</span></h2>
+				<p>Ian was in the 1st graduating class at GBC for Dental Technology in 1969. He completed the registered dental technology program in 1970 and became a crown and bridge technician.
+He then became an instructor at George Brown College till 1978 teaching students the art of dental technology. His passion evolved into furthering his career by completing the denturist exam in 1974 and opened his 1st office in 1980 at Sheridan Mall.
+Ian has been servicing Oakville, Mississauga, and the nearby communities for over 32 years.  He has built his practice working with dentist’s and dental professionals in the Oakville/ Mississauga region. Ian is a member of the Denturist Association of Ontario,
+and The Denturist Association of Canada. Ian regularly participates in training courses and seminars to keep up to date.  </p>
+			</figure>
+			<figure class="location__team-member">
+				<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509555937/denture%20centre/location/oakville/1.jpg" alt="Denturist">
+				<h2>Elicia <span><strong>Older</strong> DD</span></h2>
+				<p>Elicia graduated with honours from the Dental Assistants program at Confederation College in Thunder Bay. She then practiced as a dental assistant in all aspects of dentistry.
+She furthered her career by completing the denturist program at George Brown College with honours. Elicia participates in training courses and seminars to update her professional profile.
+She is also a member of Denturist Association of Ontario, Denturist Association of Canada</p>
+			</figure>
+		</div>
+	</div>
+	<div class="location__map">
+		<div id="map" class="location-oakville">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.793362664812!2d-79.66793418450702!3d43.50664607912652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4371754d6ab3%3A0xa2445d729d982517!2s2892+S+Sheridan+Way%2C+Oakville%2C+ON+L6J+7T4!5e0!3m2!1sen!2sca!4v1498155680338" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<a href="https://goo.gl/maps/XodvaFZLmRx" target="_blank" class="location__map-address">
+			<img src="http://res.cloudinary.com/darkroast-digital/image/upload/v1509482146/denture%20centre/map__icon.png" alt="location" draggable="false">
+			View In Google Maps
+		</a>
+	</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmsePizKcTYg7QfRlfDoWJO8unRBSkNgY"></script>
+
+{% endblock %}
